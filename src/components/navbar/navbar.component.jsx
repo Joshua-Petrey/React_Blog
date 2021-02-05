@@ -3,7 +3,7 @@ const Navbar = () => {
         
     <nav className="navbar">
         <h1>DevCaine's Blog</h1>
-        <span class='writing-emoji'>&#10002;</span>
+        <span className='writing-emoji'>&#10002;</span>
 
         <div className="links">
             <a href="/">Home</a>
