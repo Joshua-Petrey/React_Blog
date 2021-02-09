@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom';
+
 const Navbar = () => {
     return ( 
         
@@ -6,8 +8,8 @@ const Navbar = () => {
         <span className='writing-emoji'>&#10002;</span>
 
         <div className="links">
-            <a href="/">Home</a>
-            <a href="/create">New Blog</a>
+            <Link to="/">Home</Link>
+            <Link to="/create">New Blog</Link>
         </div>
     </nav>
      );
