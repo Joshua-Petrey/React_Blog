@@ -15,7 +15,7 @@
   border-bottom: 1px solid #f2f2f2;
 }
 .navbar h1 {
-  color: #ff014d;
+  color: #f30d0d;
 }
 .navbar .links {
   margin-left: auto;
@@ -26,7 +26,7 @@
   padding: 6px;
 }
 .navbar a:hover {
-  color: #f1356d;
+  color: #f30d0d;
 }
 
 .writing-emoji {
@@ -40,12 +40,18 @@
 }
 
 a[href='/create'] {
-  color: white;
-  background-color: #ff014d;
+  color: #fff;
+  background-color: #f30d0d;
   border-radius: 8px;
 
 }
 
+a[href='/create']:hover {
+  color: #f30d0d;
+  background-color: #ffffff;
+  border-radius: 8px;
+
+}
 /* blog previews / list */
 .blog-preview {
   padding: 10px 16px;

@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import {useHistory}  from 'react-router-dom';
 
 const CreateBlog = () => {
 
@@ -6,7 +7,7 @@ const CreateBlog = () => {
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('mario');
     const [isLoading, setIsLoading] = useState(false);
-
+    const history = useHistory();
 
     const handleSubmit = (e) => {
         // prevents page refresh
@@ -21,7 +22,8 @@ const CreateBlog = () => {
             headers: {"Content-Type": "application/json" },
             body: JSON.stringify(blog)
         }).then(() => {console.log("post added to db");
-            setIsLoading(false)})
+            setIsLoading(false);
+        history.push('/');})
     }
 
     return ( 
